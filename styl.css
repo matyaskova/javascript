@@ -5,3 +5,7 @@ p{font-size: 20px;
 	margin-right: 50px;}
 .napravo{float:right;}
 .nalevo{float: left;}
+article{width: 800px;
+		margin: auto;
+		text-align: center;
+		font-size: 30px;}

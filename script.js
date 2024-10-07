@@ -28,13 +28,13 @@ function pozdrav(){
 	let hodina = cas.getHours()
 	if ((hodina>5)&&(hodina<=9))
 		document.getElementById('pozdrav').innerText="Dobré ráno"
-	else if ((hodina>9)&&(hodina<=11))
+	else if ((hodina>=9)&&(hodina<11))
 		document.getElementById('pozdrav').innerText="Dobré dopoledne"
-	else if ((hodina>11)&&(hodina<=13))
+	else if ((hodina>=11)&&(hodina<13))
 		document.getElementById('pozdrav').innerText="Dobré poledne"
-	else if ((hodina>13)&&(hodina<=18))
+	else if ((hodina>=13)&&(hodina<18))
 		document.getElementById('pozdrav').innerText="Dobré odpoledne"
-	else if ((hodina>18)&&(hodina<=21))
+	else if ((hodina>=18)&&(hodina<21))
 		document.getElementById('pozdrav').innerText="Dobrý večer"
 	else
 		document.getElementById('pozdrav').innerText="Dobrou noc"

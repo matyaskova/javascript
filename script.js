@@ -40,3 +40,15 @@ function pozdrav(){
 		document.getElementById('pozdrav').innerText="Dobrou noc"
 }
 pozdrav()
+
+function prazdniny(){
+		let date = new Date()
+		let dnes = date.getTime()
+		let volno = new Date(2024,9,28)
+		let prazdno = volno.getTime()
+		let zbytek = Math.floor((volno-dnes)/(1000*60*60*24))
+
+        document.getElementById("prázdniny").innerText="Do školního volna zbývá "+ zbytek +" dní"
+
+}
+prazdniny()

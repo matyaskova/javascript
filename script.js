@@ -26,7 +26,7 @@ cas()
 function pozdrav(){
 	let cas = new Date()
 	let hodina = cas.getHours()
-	if ((hodina>5)&&(hodina<=9))
+	if ((hodina>=5)&&(hodina<9))
 		document.getElementById('pozdrav').innerText="Dobré ráno"
 	else if ((hodina>=9)&&(hodina<11))
 		document.getElementById('pozdrav').innerText="Dobré dopoledne"
